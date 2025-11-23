@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 const puppeteer = require('puppeteer');
 const cors = require('cors');
@@ -10,8 +11,11 @@ app.use(cors());
 app.use(bodyParser.json({ limit: '5mb' })); // allow large HTML
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Simple health
-app.get('/', (req, res) => res.send('Resume Export Server'));
+// Serve static frontend files from project root (adjust folder if needed)
+app.use(express.static(path.join(__dirname)));
+
+// Serve index.html at root so the project is available at '/'
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
 /**
  * POST /export
