@@ -1,0 +1,9 @@
+:root{ --bg:#f6f8fb; --accent:#0077cc; }
+body{ margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111; }
+.app{ display:flex; gap:18px; padding:18px; max-width:1400px; margin:0 auto; box-sizing:border-box; }
+.left{ width:420px; flex:0 0 420px; }
+.right{ flex:1; }
+h3{ margin:0 0 8px 0; font-size:16px; }
+.btn{ padding:8px 12px; border-radius:6px; border:1px solid #ddd; background:white; cursor:pointer; }
+.btn.primary{ background:var(--accent); color:white; border-color:var(--accent); }
+.btn:disabled{ opacity:0.6; cursor:not-allowed; }

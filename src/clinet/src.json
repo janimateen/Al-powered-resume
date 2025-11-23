@@ -1,0 +1,34 @@
+{
+  "basics": {
+    "name": "Jane Developer",
+    "label": "Senior Software Engineer",
+    "email": "jane@example.com",
+    "website": "https://jane.dev",
+    "summary": "Hands-on senior engineer building scalable systems and developer tools.",
+    "location": { "city": "Warrensburg, MO" }
+  },
+  "work": [
+    {
+      "company": "Acme Inc",
+      "position": "Senior Software Engineer",
+      "startDate": "2022-01",
+      "endDate": "Present",
+      "summary": "Lead backend and infra work, built automation and CI pipelines.",
+      "highlights": ["Designed cluster autoscaling", "Led deployment refactor"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "State University",
+      "studyType": "MSc in Computer Science",
+      "startDate": "2019-08",
+      "endDate": "2021-12",
+      "area": "Computer Science"
+    }
+  ],
+  "skills": [
+    { "name": "Node.js" },
+    { "name": "Docker" },
+    { "name": "Kubernetes" }
+  ]
+}
