@@ -1,0 +1,2 @@
+# ignore node modules and OS files
+node_modules/
